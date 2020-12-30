@@ -3,10 +3,10 @@ from flask import jsonify
 import random
 app = Flask(__name__)
 @app.route("/")
-def hello():
+def welcome():
     return "Endpoints: /gaali"
 @app.route('/gaali', methods=['GET'])
-def welcome():
+def sendgaali():
     a = ["Bhosdike", "Madarchod", "Bhadhve", "Bhenchod", "Betichod", "Lawde", "Hijre", "Randi"]
     return jsonify({ "gaali": random.choice(a) })
 
