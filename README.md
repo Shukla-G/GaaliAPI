@@ -1,2 +1,2 @@
 # GaaliAPI
-idk why i made this
+Very basic API.
